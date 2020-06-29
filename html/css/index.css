@@ -1,0 +1,131 @@
+*{
+	color: magenta;
+	text-align: center;
+	margin: 0; /*overrides default margin*/
+	padding: 0; /*overrides default padding*/
+	cursor: url(../images/myCursor.png), auto;
+}
+
+body{
+	background: black;
+}
+
+header{
+	background-image: url(../images/nebula.gif);
+	background-position: center;
+	margin-bottom: 1%;
+	padding: 5px 10px;
+	position: sticky;
+	top: 0px;
+}
+
+nav{
+	background: black;
+	padding: 2px;
+	margin: auto;
+	width: 30%;
+}
+
+ul{
+	list-style-type: none;
+	display: flex; /*must add to parent container*/
+	flex-direction: row;
+	justify-content: center;
+}
+
+li a{
+	font-size: 14pt;
+	font-weight: bolder;
+	margin-right: 20px;
+	text-decoration: none;
+	
+}
+
+li a:hover{
+	background: magenta;
+	color: black;
+}
+
+li.last a{
+	margin-right: 0;
+}
+
+@font-face{
+	font-family: myFont;
+	src: url(font.ttf);
+}
+
+h1{
+	font-size: 250%;
+	font-family: myFont, Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+h2{
+	margin-bottom: 1%;
+}
+
+.button{
+	background-image: url(../images/nebula.gif);
+	font-size: 42px;
+	width: 300px;
+	height: 100px;
+	border: magenta;
+	border-style: ridge;
+	border-radius: 15px;
+	margin: 10px 4px;
+	padding-top: 45px;
+	display: inline-block;
+	text-decoration: none;
+	transition-duration: 0.7s;
+}
+
+.button:hover{
+	box-shadow: 0 4px 8px 0 whitesmoke, 0 8px 10px 0 magenta;
+	transform: scale(1.05, 1.05); 
+	transform: translateY(-5px);
+}
+
+.button:active{
+	box-shadow: 0 2px 6px 0 white, 0 6px 8px 0 purple;
+	transform: translateY(5px);
+}
+
+div{
+	display: flex;
+	flex-direction: row;
+}
+
+iframe{
+	border: none;
+	width: 100%;
+	height: 350px;
+}
+
+span{
+	font-size: 20px;
+}
+
+.fa{
+	background-image: url(../images/nebula.gif);
+	border: magenta;
+	border-style: groove;
+	border-radius: 10px;
+	float: left;
+	padding: 20px;
+	width: 20px;
+	text-decoration: none;
+}
+
+.fa:hover{
+	opacity: 0.7;
+}
+
+.fa-facebook{
+	margin-top: 12px;
+}
+
+.fa-instagram, .fa-twitter, .fa-youtube{
+	clear: left;
+}
